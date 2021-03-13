@@ -1,3 +1,62 @@
+.number-input-container {
+  position: relative;
+  height: 95px;
+  display: flex;
+  flex-direction: row;
+  z-index: 6;
+  padding-right: 30px;
+  margin-bottom: 24px;
+}
+.currency-symbol {
+  flex: 0 0 60px;
+  font-size: 60px;
+  line-height: 1;
+  position: relative;
+  top: 37px;
+}
+
+.number-input-value-container {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 5px;
+}
+
+.number-input-value {
+  font-family: AlipayNumber, Helvetica;
+  display: inline-block;
+  font-size: 85px;
+  vertical-align: middle;
+}
+
+.number-input-container-cursor {
+  content: '';
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  width: 2px;
+  height: 100%;
+  border-radius: 1px;
+  background-color: #1677ff;
+  animation: numberInputCursor 1s step-start infinite;
+  vertical-align: middle;
+}
+
+@keyframes numberInputCursor {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;

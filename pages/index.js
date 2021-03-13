@@ -2,7 +2,60 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  return (
+  return (<div>
+    <div className={styles.container2}>
+      <div className={styles['number-input-container']}>
+        <div className={styles['currency-symbol']}>¥</div>
+
+        <div className={styles['number-input-value-container']}>
+          <div className={styles['number-input-value']}>23</div>
+          <div className={styles['number-input-container-cursor']}></div>
+        </div>
+      </div>
+
+
+      <textarea name="" id="" cols="80" rows="37" readOnly value={
+`
+.number-input-container-cursor {
+  content: '';
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  width: 2px;
+  height: 100%;
+  border-radius: 1px;
+  background-color: #1677ff;
+  animation: numberInputCursor 1s step-start infinite;
+  vertical-align: middle;
+}
+
+@keyframes numberInputCursor {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+<div class="number-input-container">
+  <div class="currency-symbol">¥</div>
+
+  <div class="number-input-value-container">
+    <div class="number-input-value">23</div>
+    <div class="number-input-container-cursor"></div>
+  </div>
+</div>
+`
+      }>
+      </textarea>
+    </div>
+  
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -61,5 +114,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+    </div>)
 }
