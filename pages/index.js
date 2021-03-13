@@ -4,6 +4,18 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (<div>
     <div className={styles.container2}>
+      1. 正常
+      <div className={styles['number-input-container']}>
+        <div className={styles['currency-symbol']}>¥</div>
+
+        <div className={styles['number-input-value-container']}>
+          <div className={styles['number-input-value']}>23</div>
+          <div className={`${styles['number-input-container-cursor']} ${styles['animation']}`}></div>
+        </div>
+      </div>
+
+      2. 去除 animation
+
       <div className={styles['number-input-container']}>
         <div className={styles['currency-symbol']}>¥</div>
 
@@ -13,6 +25,16 @@ export default function Home() {
         </div>
       </div>
 
+      3. 去除 step-start
+
+      <div className={styles['number-input-container']}>
+        <div className={styles['currency-symbol']}>¥</div>
+
+        <div className={styles['number-input-value-container']}>
+          <div className={styles['number-input-value']}>23</div>
+          <div className={`${styles['number-input-container-cursor']} ${styles['animation-no-step-start']}`}></div>
+        </div>
+      </div>
 
       <textarea name="" id="" cols="80" rows="37" readOnly value={
 `

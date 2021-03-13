@@ -38,8 +38,15 @@
   height: 100%;
   border-radius: 1px;
   background-color: #1677ff;
-  animation: numberInputCursor 1s step-start infinite;
   vertical-align: middle;
+}
+
+.animation {
+  animation: numberInputCursor 1s step-start infinite;
+}
+
+.animation-no-step-start {
+  animation: numberInputCursor 1s infinite;
 }
 
 @keyframes numberInputCursor {
