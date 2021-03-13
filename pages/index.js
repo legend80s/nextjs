@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (<div>
     <div className={styles.container2}>
+      <h1>no flex</h1>
       1. 正常
       <div className={styles['number-input-container']}>
         <div className={styles['currency-symbol']}>¥</div>
@@ -36,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <textarea name="" id="" cols="80" rows="37" readOnly value={
+      {/* <textarea name="" id="" cols="80" rows="37" readOnly value={
 `
 .number-input-container-cursor {
   content: '';
@@ -75,10 +76,10 @@ export default function Home() {
 </div>
 `
       }>
-      </textarea>
+      </textarea> */}
     </div>
   
-    <div className={styles.container}>
+    {/* <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -135,6 +136,6 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
-    </div>
+    </div> */}
     </div>)
 }
